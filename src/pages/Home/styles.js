@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px;
+  box-sizing: border-box;
 `;
 
 export const NavBar = styled.div`
@@ -67,9 +67,45 @@ export const Link = styled.a`
 `;
 
 export const Header = styled.div`
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   background-color: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+`;
+
+export const HeaderContent = styled.div`
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 100px;
+`;
+
+export const BannerWrapper = styled.div`
+  width: 450px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Services = styled.div`
+  width: 90%;
+  max-width: 900px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  transform: translateY(100px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: -2px 2px 0.4rem #000;
 `;
 
 export const Footer = styled.div``;
